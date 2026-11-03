@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "ModelSetMethodView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    /* Target the table, headers, and cells */
+    table, th, td {
+        border: 1px solid black; /* Width, style, and color */
+    }
+
+    /* Merge double borders into a clean single line */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+</style>
+<body>
+    <p>This is a ModelSetMethodView</p>
+    <table style="border: 1px solid black;">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+        <tr>
+            <td>@Model.UserName</td>
+            <td>@Model.UserAge</td>
+            <td>@Model.UserEmail</td>
+            <td>@Model.Password</td>
+        </tr>
+    </table>
+</body>

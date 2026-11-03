@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Home Page</title>
+    </head>
+    <body>
+    @{
+        var emp = ViewData["Employee"] as Employee;
+}
+<table>
+        <tr>
+            <td>Employee ID</td>
+            <td>@emp.Id</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>@emp.Name</td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>@emp.Description</td>
+        </tr>
+        <tr>
+            <td>Department</td>
+            <td>@emp.Department</td>
+        </tr>
+</table>
+    </body>
+    </html>

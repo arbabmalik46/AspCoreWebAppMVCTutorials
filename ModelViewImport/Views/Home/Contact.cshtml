@@ -1,0 +1,11 @@
+﻿@model List<Student>
+@{
+    ViewData["Title"] = "Contact";
+}
+<h1>Contact Us Page</h1>
+@{
+    foreach (var item in Model)
+    {
+        <p>@item.Name</p>
+    }
+}

@@ -1,0 +1,27 @@
+﻿Connect DB with service using code first approach in ASP.NET Core 6.0.
+1. Install the required NuGet packages:
+   - Microsoft.EntityFrameworkCore
+   - Microsoft.EntityFrameworkCore.SqlServer (or any other provider you are using)
+   - Microsoft.EntityFrameworkCore.Tools
+2. Create a model class that represents the database table. For example, create a class named "Product":
+3. Create a DbContext class that represents the database context. For example, create a class named "AppDbContext" that inherits from DbContext and includes a DbSet for the Product model:
+4. Configure the connection string in the appsettings.json file:
+```json
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=your_server;Database=your_database;User Id=your_username;Password=your_password;"
+  }
+}
+5. In the Startup.cs or Program.cs file, configure the DbContext in the ConfigureServices method:
+```csharp
+var provider = builder.Services.BuildServiceProvider();
+var configuration = provider.GetRequiredService<IConfiguration>();
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+builder.Services.AddDbContext<StudentContext>(options => options.UseSqlServer(connectionString));
+6. Create a migration to create the database schema based on your model classes. Run the following command in the Package Manager Console:
+```cmd
+Add-Migration InitialCreate
+7. Apply the migration to create the database by running the following command:
+```cmd
+Update-Database
+8. Now you can use the DbContext in your services or controllers to perform CRUD operations on the database. For example, you can inject the AppDbContext into a controller and use it to retrieve or save data.

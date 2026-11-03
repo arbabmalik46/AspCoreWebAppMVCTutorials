@@ -1,0 +1,10 @@
+﻿@model List<Student>
+@{
+}
+<p>About Us Page</p>
+@{
+    foreach (var item in Model)
+    {
+        <p>@item.Name</p>
+    }
+}

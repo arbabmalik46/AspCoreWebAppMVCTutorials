@@ -1,0 +1,28 @@
+﻿@model ModelDataUsingViewData.Models.Employee
+@{
+    ViewData["Title"] = "About";
+    ViewData["Copyright"] = "Copyright (c) 2024"; 
+}
+<html>
+    <head>
+    <title>@ViewData["Title"]</title>
+    </head>
+<body>
+    <table>
+       <tr>
+           <td>
+               @Model.Name
+           </td>
+       </tr>
+       <tr>
+           <td>
+                @Model.Salary
+           </td>
+       </tr>
+    </table>
+    <p>Use this page to provide information about your application.</p>
+    <footer>
+        <p>@ViewData["Copyright"]</p>
+    </footer>
+    </body>
+</html>

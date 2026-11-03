@@ -1,0 +1,23 @@
+﻿@model DropDownListWithDB.Models.CompanyModel
+@{
+
+    ViewData["Title"] = "Home Page";
+}
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+<label class="form-label">Select Company Name</label>
+@* <select asp-for="ID" asp-items="@(new SelectList(Model.CompanyList, "Value", "Text"))" class="form-control"></select> *@
+@Html.DropDownListFor(model => model.ID, new SelectList(Model.CompanyList, "Value", "Text"), "Select Company", new { @class = "form-control" })
+<br/>
+<form class="form-control" asp-action="Index" method="post">
+    <input type="submit" asp-action="Index" value="submit" class="btn btn-success" action="submit" />
+</form>
+
+<br/>
+@{
+    if(ViewBag.SelectedValue != null)
+    {
+        <p>You selected: @ViewBag.SelectedValue</p>
+    }
+}

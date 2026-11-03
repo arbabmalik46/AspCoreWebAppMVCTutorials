@@ -1,0 +1,24 @@
+<Solution>
+  <Project Path="APIImplementation/APIImplementation.csproj" Id="37c1dddb-d830-48fa-9934-8fcc2f9f94ec" />
+  <Project Path="AreasTutorial/AreasTutorial.csproj" Id="98306d4f-686a-4ba3-a784-6aa4b90fdaff" />
+  <Project Path="ASPCoreAPIWithCRUD/ASPCoreAPIWithCRUD.csproj" Id="331960af-e12d-4bc3-8714-f9f9fccefd61" />
+  <Project Path="ASPCoreWebAPIIntro/ASPCoreWebAPIIntro.csproj" Id="467e3f5e-9ff1-4c14-8602-ae04e24a98af" />
+  <Project Path="AspCoreWebAppMVC/AspCoreWebAppMVC.csproj" />
+  <Project Path="CheckBoxAspCore6/CheckBoxAspCore6.csproj" Id="68e680d1-8aba-41b2-9748-c23e5cb1c47f" />
+  <Project Path="CodeFirstASPCore6/CodeFirstASPCore6.csproj" Id="ce16abee-9cca-4406-a438-8fa1899581b6" />
+  <Project Path="CRUDusingADO/CRUDusingADO.csproj" Id="8cb3d74c-d1e7-4fc2-baeb-19ade7ddee57" />
+  <Project Path="DBFirstApproach/DBFirstApproach.csproj" Id="d3e1b687-4484-4b50-888f-0af7c2dc26db" />
+  <Project Path="DropDownListWithDB/DropDownListWithDB.csproj" Id="442fbb66-2c78-4508-b25d-0e1c827aab50" />
+  <Project Path="DropDownLostASPdotNetCore6/DropDownLostASPdotNetCore6.csproj" Id="ce54e58a-63b3-4a9c-8fe3-be0c9a17c843" />
+  <Project Path="IdentityFW/IdentityFW.csproj" Id="55bf8171-7ded-44e7-974b-c8c63f9a1dfc" />
+  <Project Path="ImageManagement/ImageManagement.csproj" Id="48e17ce1-2e2c-427f-8cbe-a63974517fb5" />
+  <Project Path="InstallingFrontEndLibraries/InstallingFrontEndLibraries.csproj" Id="0bea90cb-75f5-4e10-b9b3-8c9734f0f1c9" />
+  <Project Path="LogInFormASPdotNetCore6/LogInFormASPdotNetCore6.csproj" Id="41c017be-24a2-4bde-a55d-f3baa341b2e7" />
+  <Project Path="ModelBiding/ModelBiding.csproj" Id="5ede9532-5513-4c47-afe5-6dddf97854df" />
+  <Project Path="ModelDataUsingViewData/ModelDataUsingViewData.csproj" Id="6f00cf35-39b3-4d3d-899a-40f6b33c74c0" />
+  <Project Path="ModelViewImport/ModelViewImport.csproj" Id="f7323850-6c42-4129-b638-79687d9f4c8b" />
+  <Project Path="PartialViewWithoutModel/PartialViewWithoutModel.csproj" Id="4f9b4cd1-721f-4311-8387-79d174b98317" />
+  <Project Path="SessionAspCore6/SessionAspCore6.csproj" Id="4da754e3-b09d-4dbd-a85a-08324fcc3ab4" />
+  <Project Path="TagHelpersDemo/TagHelpersDemo.csproj" Id="c3ccd4a9-b1c1-46dc-84d7-ca849525db71" />
+  <Project Path="ViewModelAspCore6/ViewModelAspCore6.csproj" Id="8157abdd-2598-4878-906c-4d287658820a" />
+</Solution>

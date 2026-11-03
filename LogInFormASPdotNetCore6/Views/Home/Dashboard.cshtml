@@ -1,0 +1,18 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor httpContextAccessor
+@{
+ ViewData["Title"] = "Dashboard";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-body text-center">
+                    <h1 class="card-title mb-4">Welcome to the Dashboard!</h1>
+                    <p class="lead">@httpContextAccessor.HttpContext.Session.GetString("myUser") You have successfully logged in.</p>
+                    <a asp-action="LogOut" class="btn btn-danger btn-lg mt-3">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </div>

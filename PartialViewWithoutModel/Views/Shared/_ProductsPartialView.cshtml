@@ -1,0 +1,12 @@
+﻿@model PartialViewWithoutModel.Models.Products
+<div>
+    <div class="card" style="width: 18rem;">
+        <img src="@Model.ImageUrl" class="card-img-top" alt="@Model.Name">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+            <p class="card-text">@Model.Description</p>
+            <p class="card-text">Price: @Model.Price</p>
+            
+        </div>
+    </div>
+</div>

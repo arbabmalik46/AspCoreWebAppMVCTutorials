@@ -1,0 +1,30 @@
+﻿@* @page *@
+@{
+    // ViewData["Title"] = "Contact";
+    ViewData["Title"] = TempData["Title"];
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+    //If you want to set a specified layout, then create the layout and set the value of layout in your html page.
+    // Layout = "~/Views/Shared/_Layout2.cshtml";
+    //If you want to set no Layout
+    // Layout = null;
+    //Conditional Layout
+    if(User.IsInRole("Admin"))
+    {
+        Layout = null;
+    }
+    else
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+}
+
+<h1>Contact Page</h1>
+<p>Owner of this page is @TempData["Owner"]</p>
+<p>This is temp data's value = @TempData["Message"]</p>
+<p>This is value of ViewBag.Name = @ViewBag.Name;</p>
+<p>This is the contact page of our application. You can reach us through the following methods:</p>
+<ul>
+    <li>Email: contact@example.com</li>
+    <li>Phone: (123) 456-7890</li>
+    <li>Address: 123 Main Street, Anytown, USA</li>
+</ul>

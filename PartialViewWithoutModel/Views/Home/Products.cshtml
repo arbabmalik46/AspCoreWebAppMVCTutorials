@@ -1,0 +1,14 @@
+﻿@model IEnumerable<PartialViewWithoutModel.Models.Products>
+@{
+    ViewData["Title"] = "Products Page";
+}
+@{
+    if(Model!=null)
+    {
+        foreach(var product in Model)
+        {
+            // <partial name="_ProductsPartialView" model="product" />
+            @Html.Partial("_ProductsPartialView", product)
+        }
+    }
+}

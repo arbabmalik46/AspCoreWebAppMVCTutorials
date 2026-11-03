@@ -1,0 +1,13 @@
+﻿@{
+    string name = "Arbab";
+    Console.WriteLine(name);
+    string[] names = {"Ali","Hamza","Bhatti"};
+    // ViewData["Title"] = "My first Page";
+    ViewData["Title"] = @ViewData["Title"];
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<p>My name is @ViewData["Name"]
+</p>
+
+    <p>This page is owned by @name</p>
+    <p>This is a simple Text for index action method of UserController</p>
